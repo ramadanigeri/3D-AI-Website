@@ -1,9 +1,7 @@
-import React from 'react'
-import {motion, AnimatePresence, steps} from 'framer-motion'  
+import {motion, AnimatePresence} from 'framer-motion'  
 import {useSnapshot} from 'valtio'
 import {
   headContainerAnimation,
-  headContentAnimation,
   headTextAnimation,
   slideAnimation
 } from '../config/motion'
@@ -20,7 +18,8 @@ const Home = () => {
             <img 
               src='./threejs.png'
               alt='logo'
-              className='w-8 h-8 object-contain'></img>
+              className='w-8 h-8 object-contain'
+            />
           </motion.header>
           <motion.div className='home-content' {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
